@@ -4,21 +4,45 @@
 }
 
 body{
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
 }
 
 header {
     height: 76px;
     padding-top: 16px;
-}
-
-.intro {
     padding-left: 120px;
     padding-right: 120px;
 }
 
+section {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+main {
+    margin-bottom: 64px;
+}
+
+footer {
+    /* height: 207px; */
+    height: 130px;
+    background: #F7F6F6;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .intro-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
 }
 
 .header-logo {
@@ -26,8 +50,9 @@ header {
 }
 
 .header-search {
-    margin-left: 25%;
+    /* margin-left: 25%; */
     height: 41px;
+    width: 288px;
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 20px;
@@ -45,8 +70,9 @@ header {
 }
 
 .header-nav {
-    margin-left: 120px;
+    /* margin-left: 120px; */
     display: flex;
+    justify-content: space-between;
 }
 
 .header-nav-element {
@@ -60,7 +86,11 @@ header {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 32px;
+    /* margin: 0px 32px; */
+}
+
+.header-nav-element:nth-child(2n) {
+    margin-left: 32px;
 }
 
 .intro {
@@ -72,7 +102,7 @@ header {
 .main-header {
     margin-top: 64px;
     margin-bottom: 16px;
-    margin-left: 117px;
+    /* margin-left: 117px; */
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -82,9 +112,9 @@ header {
 }
 
 .slogan-paragraph {
-    margin-bottom: 16px;
     height: 32px;
-    margin-left: 117px;
+    margin-bottom: 16px;
+    /* margin-left: 117px; */
     margin-top: 16px;
 
     font-family: Montserrat;
@@ -97,7 +127,7 @@ header {
 
 .catalog-link {
     height: 24px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
     margin-top: 16px;
 
     font-family: Montserrat;
@@ -112,7 +142,6 @@ header {
 .special-offer-header {
     height: 59px;
     margin-top: 64px;
-    margin-left: 120px;
     margin-bottom: 32px;
 
     font-family: Montserrat;
@@ -127,7 +156,27 @@ header {
     color: #000000;
 }
 
-.special-offer-product-name {
+.product-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+.product-card {
+    width: 379px;
+}
+
+.product-image {
+    object-fit: cover;
+}
+
+.special-offer-price {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-name {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -135,7 +184,7 @@ header {
     margin: 0px 0px 8px 0px;
 }
 
-.special-offer-product-desc {
+.product-desc {
     font-size: 14px;
     line-height: 17px;
     color: #888888;
@@ -144,13 +193,33 @@ header {
 
 [class*="price"] {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 29px;
     color: #050505;
+    margin-right: 32px;
 }
 .price-old {
     text-decoration-line: line-through;
     color: #888888;
+}
+
+.catalog-section-link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    filter: brightness(0%);
 }
 
 .footer-section-element {
@@ -169,11 +238,27 @@ header {
     text-decoration: none;
 }
 
+.footer-contacts-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-subscription {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 .subscription-header {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
     margin: 0px 0px 16px 0px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .subscription-email-input {
@@ -181,6 +266,17 @@ header {
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    width: 275px;
+    height: 46px;
+    padding-left: 32px;
+}
+
+.subscription-email-input::placeholder {
+    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -193,9 +289,13 @@ header {
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 20px;
-    width: 275.36px;
+    width: 275px;
     height: 46px;
     font-size: 15px;
     line-height: 18px;
     color: #000000;
+}
+
+.footer-link, .footer-contacts-social, .subscription-email-input, .subscribe-button {
+    margin-bottom: 12px;
 }
