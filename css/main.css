@@ -45,6 +45,13 @@ footer {
     padding-top: 0px;
 }
 
+.solid {
+    margin-left: 120px;
+    margin-right: 120px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
 .header-logo {
     height: 44px;
 }
@@ -159,6 +166,7 @@ footer {
 .product-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 56px;
 }
