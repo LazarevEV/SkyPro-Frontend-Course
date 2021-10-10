@@ -11,8 +11,8 @@ body{
 section {
     /* padding-left: 120px;
     padding-right: 120px; */
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
 }
 
 main {
@@ -27,8 +27,8 @@ footer {
     justify-content: space-between;
     /* padding-left: 120px;
     padding-right: 120px; */
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -41,8 +41,8 @@ input:focus{
     /* padding-top: 16px; */
     /* margin-left: 120px;
     margin-right: 120px; */
-    margin-left: calc(50% - 600px);
-    margin-right: calc(50% - 600px);
+    margin-left: calc(50% - 620px);
+    margin-right: calc(50% - 620px);
 
     display: flex;
     justify-content: space-between;
