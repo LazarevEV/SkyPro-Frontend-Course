@@ -612,6 +612,10 @@ input:focus {
   color: #000000;
 }
 
+.catalog-section-link:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .footer-logo {
   -webkit-filter: brightness(0%);
           filter: brightness(0%);
