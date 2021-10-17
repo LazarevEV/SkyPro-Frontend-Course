@@ -1,0 +1,42 @@
+@media (max-width: 1023px) {
+    section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .intro-header {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .category-card {
+        height: 265px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    // Cart Page
+    .cart-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .cart-pane-control {
+        display: flex;
+        justify-content: center;
+    }
+
+    .order-pane {
+        width: 364px;
+        margin-bottom: 64px;
+    }
+}

@@ -1,0 +1,64 @@
+.intro.catalog {
+    min-height: 400px;
+    background-image: url('../img/intro_background_catalog.jpg');
+    background-size: cover;  
+}
+
+
+.catalog-control-bar {
+    // padding-top: 64px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-breadcrumb-nav-ul {
+    display: flex;
+    list-style: none;
+}
+
+.catalog-breadcrumb-nav-element {
+    display: inline;
+    text-decoration: none;
+
+    font-size: 16px;
+    line-height: 32px;
+
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.catalog-breadcrumb-nav a + a::before {
+    content: "\00a0/\00a0\00a0";
+
+    font-size: 16px;
+    line-height: 32px;
+
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.catalog-sort-dropdown {
+    height: 41px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding-left: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+/* Doesn't work in Firefox (Works in Google Chrome) */
+.catalog-sort-option {
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+}

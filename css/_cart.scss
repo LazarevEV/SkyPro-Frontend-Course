@@ -1,0 +1,221 @@
+.intro.cart {
+    min-height: 400px;
+    background-image: url('../img/intro_background_cart.jpg');
+    background-size: cover;  
+}
+
+.cart-section {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+}
+
+.cart-pane {
+    min-width: 786px;
+}
+
+.cart-header-bar {
+    padding-bottom: 16px;
+    grid-column: span 8;
+    font-size: 16px;
+    line-height: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #000000;
+}
+
+.product-card.cart {
+    display: flex;
+    width: 100%;
+    height: 173px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    border-top: 1px solid rgba(136, 136, 136, 0.3);
+}
+
+.product-image.cart {
+    max-height: 173px;
+    max-width: 173px;
+    object-fit: cover;
+    padding-bottom: 0;
+}
+
+.cart-product-info {
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-name.cart {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.product-desc.cart {
+    font-size: 14px;
+    line-height: 17px;
+} 
+
+.price.cart {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.product-card-control {
+    margin-top: auto;
+}
+
+.product-card-button {
+    margin-right: 32px;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    border: none;
+    background: none;
+    color: #000000;
+}
+
+.product-card-button:hover {
+    color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.product-amount-input {
+    height: 51px;
+    width: 71px;
+    background: #F7F6F6;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+
+    // Doesn't work in Mozilla ??
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.order-pane {
+    grid-column: span 4;
+    min-width: 329px;
+    max-height: 400px;
+    background: #F7F6F6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    padding-left: 28px;
+    padding-right: 28px;
+    align-items: center;
+}
+
+.order-pane-header {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    align-items: center;
+    text-align: center;
+}
+
+.order-name, .order-phone-number, .order-delivery-address {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.3);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 42px;
+    color: #000000
+}
+
+// Doesn't work in Mozilla ??
+.order-name::placeholder, .order-phone-number::placeholder, .order-delivery-address::placeholder {
+    color: #000000;
+}
+
+.order-total-block {
+    margin-top: 64px;
+    margin-bottom: 16px;
+    display: flex;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.order-total-sum {
+    font-weight: 600;
+}
+
+.cart-pane-control {
+    margin-bottom: 64px;
+}
+
+.checkout-button {
+    width: 290px;
+    height: 41px;
+    background: none;
+    border: 1px solid #040404;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.clear-cart-button {
+    width: 200px;
+    height: 37px;
+    background: none;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-right: 16px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #020202;
+}
+
+.continue-shopping-button {
+    width: 200px;
+    height: 37px;
+
+    background: #000000;
+    border: none;
+    border-radius: 50px;   
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;  
+    color: #FFFFFF;    
+}
+
+.clear-cart-button:hover, .continue-shopping-button:hover, .checkout-button:hover {
+    background-color: #e6e6e6;
+    border: none;
+    color: #000000;
+} 
