@@ -12,15 +12,31 @@
 <body>
     <div class="intro">
         <header class="intro-header">
-            <img class="header-logo" src="img/logo.svg" alt="Logo">
+            <picture class="header-logo">
+                <source media="(max-width: 767px)" srcset="img/logo_mobile.svg">
+                <source media="(min-width: 768px)" srcset="img/logo.svg">
+                <img class="header-logo" src="img/logo.svg" alt="Logo">
+            </picture>
             <input class="header-search" type="search" name="Search" id="input-search" placeholder="Поиск">
             <nav class="header-nav">
                 <a class="header-nav-element" href="catalog.html">Каталог</a>
                 <a class="header-nav-element" href="cart.html">Корзина</a>
             </nav>
+            <div class="header-nav mobile">
+                <a class="header-nav-element" id="nav-mobile-search">
+                    <img src="img/search.svg" alt="Search Button">
+                </a>
+                <a class="header-nav-element" id="nav-mobile-catalog" href="catalog.html">
+                    <img src="img/catalog.svg" alt="Catalog Button">
+                </a>
+                <a class="header-nav-element" id="nav-mobile-cart" href="cart.html">
+                    <img src="img/cart.svg" alt="Cart Button">
+                </a>
+            </div>
         </header>
         <section>
             <h1 class="main-header">Всё, чего заслуживает&#160;Ваш дом</h1>
+            <h1 class="main-header mobile">Всё, чего заслуживает Ваш дом</h1>
             <p class="slogan-paragraph">Наша мебель — ваше отражение</p>
             <a class="catalog-link" href="catalog.html">Перейти в каталог</a>
         </section>
