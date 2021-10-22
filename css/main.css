@@ -722,7 +722,7 @@ input:focus {
   color: #000000;
 }
 
-.clear-cart-button {
+.clear-cart-button, .continue-shopping-button {
   width: 200px;
   height: 37px;
   background: none;
@@ -738,27 +738,6 @@ input:focus {
   line-height: 17px;
   text-align: center;
   color: #020202;
-}
-
-.continue-shopping-button {
-  width: 200px;
-  height: 37px;
-  background: #000000;
-  border: none;
-  border-radius: 50px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.clear-cart-button:hover, .continue-shopping-button:hover, .checkout-button:hover {
-  background-color: #e6e6e6;
-  border: none;
-  color: #000000;
 }
 
 @media (max-width: 1023px) {
@@ -1059,5 +1038,27 @@ input:focus {
 
 .link:hover {
   text-decoration: underline;
+}
+
+.big-button {
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  overflow: hidden;
+  background-image: linear-gradient(135deg, #31302B 50%, transparent 51%);
+  background-size: 100px 100px;
+  /* some initial size to get the slanted appearance */
+  background-position: -50px -50px;
+  /* negative positioning to hide it initially */
+  background-repeat: no-repeat;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.big-button:hover {
+  background-size: 200% 200%;
+  /* 200% because gradient is colored only for 50% */
+  background-position: 0px 0px;
+  /* bring it fully into view */
+  color: #FFF;
 }
 /*# sourceMappingURL=main.css.map */
