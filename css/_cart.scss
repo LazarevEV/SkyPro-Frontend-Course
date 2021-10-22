@@ -77,15 +77,14 @@
     margin-right: 32px;
     font-size: 14px;
     line-height: 24px;
-    text-decoration-line: underline;
     border: none;
     background: none;
     color: #000000;
 }
 
-.product-card-button:hover {
-    color: rgba($color: #000000, $alpha: 0.5);
-}
+// .product-card-button:hover {
+//     color: rgba($color: #000000, $alpha: 0.5);
+// }
 
 .product-amount-input {
     margin-left: auto;

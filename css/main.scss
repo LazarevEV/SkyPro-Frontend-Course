@@ -61,7 +61,6 @@ input:focus{
     margin-top: 16px;
     font-size: 16px;
     line-height: 24px;
-    text-decoration-line: underline;
     color: #FFFFFF;
 }
 
@@ -110,7 +109,6 @@ input:focus{
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-    text-decoration: none;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -236,12 +234,7 @@ input:focus{
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    text-decoration-line: underline;
     color: #000000;
-}
-
-.catalog-section-link:hover {
-    color: rgba($color: #000000, $alpha: 0.5);
 }
 
 .footer-logo {
@@ -253,7 +246,6 @@ input:focus{
     font-size: 14px;
     line-height: 17px;
     color: #888888;
-    text-decoration: none;
 }
 
 .footer-section {
@@ -336,6 +328,12 @@ input:focus{
     color: #000000;
 }
 
+.subscribe-button:hover {
+    background-color: #e6e6e6;
+    border: none;
+    color: #000000;
+}
+
 .footer-link, .footer-contacts-social, .subscription-email-input, .subscribe-button {
     margin-bottom: 12px;
 }
@@ -344,3 +342,10 @@ input:focus{
 @import 'cart';
 @import 'tablet';
 @import 'mobile';
+
+.link {
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+} 

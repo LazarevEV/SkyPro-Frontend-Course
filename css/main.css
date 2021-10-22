@@ -59,8 +59,6 @@ input:focus {
   margin-top: 16px;
   font-size: 16px;
   line-height: 24px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   color: #FFFFFF;
 }
 
@@ -134,7 +132,6 @@ input:focus {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  text-decoration: none;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -284,13 +281,7 @@ input:focus {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   color: #000000;
-}
-
-.catalog-section-link:hover {
-  color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-logo {
@@ -303,7 +294,6 @@ input:focus {
   font-size: 14px;
   line-height: 17px;
   color: #888888;
-  text-decoration: none;
 }
 
 .footer-section {
@@ -428,6 +418,12 @@ input:focus {
   height: 46px;
   font-size: 15px;
   line-height: 18px;
+  color: #000000;
+}
+
+.subscribe-button:hover {
+  background-color: #e6e6e6;
+  border: none;
   color: #000000;
 }
 
@@ -604,15 +600,9 @@ input:focus {
   margin-right: 32px;
   font-size: 14px;
   line-height: 24px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   border: none;
   background: none;
   color: #000000;
-}
-
-.product-card-button:hover {
-  color: rgba(0, 0, 0, 0.5);
 }
 
 .product-amount-input {
@@ -819,6 +809,12 @@ input:focus {
   }
 }
 
+@media (min-width: 768px) and (max-width: 833px) {
+  .product-card {
+    width: 340px;
+  }
+}
+
 @media (max-width: 767px) {
   section, .intro-header {
     margin-left: calc(max(calc(50% - 188px), 16px));
@@ -937,6 +933,9 @@ input:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     row-gap: 32px;
     margin-bottom: 32px;
   }
@@ -1052,5 +1051,13 @@ input:focus {
             align-items: center;
     margin-bottom: 32px;
   }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
