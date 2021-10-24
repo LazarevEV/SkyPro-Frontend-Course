@@ -1,16 +1,7 @@
 @media (max-width: 1023px) {
-    @mixin centered() {
-        margin-left: calc(max(calc(50% - 393px), 24px));
-        margin-right: calc(max(calc(50% - 393px), 24px));
-    }
-
-    section, .intro-header {
-        @include centered();
-    }
-
-    footer {
-        padding-left: calc(max(calc(50% - 393px), 24px));
-        padding-right: calc(max(calc(50% - 393px), 24px));
+    .centered {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
     }
 
     main {

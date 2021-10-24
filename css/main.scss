@@ -1,8 +1,12 @@
-@mixin centered() {
-    margin-left: calc(max(calc(50% - 620px), 24px));
-    margin-right: calc(max(calc(50% - 620px), 24px));
-    // margin-left: calc(50% - 620px);
-    // margin-right: calc(50% - 620px);
+.centered {
+    // padding-left: calc(max(calc(50% - 620px), 24px));
+    // padding-right: calc(max(calc(50% - 620px), 24px));
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+img {
+    width: 100%;
 }
 
 * {
@@ -17,18 +21,11 @@ body{
     background-color: #FFFFFF;
 }
 
-section {
-    @include centered();
-}
-
 main {
     margin-bottom: 64px;
 }
 
 footer {
-    padding-left: calc(max(calc(50% - 620px), 24px));
-    padding-right: calc(max(calc(50% - 620px), 24px));
-
     min-height: 130px;
     background: #F7F6F6;
     display: flex;
@@ -65,7 +62,6 @@ input:focus{
 }
 
 .intro-header {
-    @include centered();
     height: 76px;
     display: flex;
     justify-content: space-between;

@@ -1,3 +1,12 @@
+.centered {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+img {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,18 +19,11 @@ body {
   background-color: #FFFFFF;
 }
 
-section {
-  margin-left: calc(max(calc(50% - 620px), 24px));
-  margin-right: calc(max(calc(50% - 620px), 24px));
-}
-
 main {
   margin-bottom: 64px;
 }
 
 footer {
-  padding-left: calc(max(calc(50% - 620px), 24px));
-  padding-right: calc(max(calc(50% - 620px), 24px));
   min-height: 130px;
   background: #F7F6F6;
   display: -webkit-box;
@@ -63,8 +65,6 @@ input:focus {
 }
 
 .intro-header {
-  margin-left: calc(max(calc(50% - 620px), 24px));
-  margin-right: calc(max(calc(50% - 620px), 24px));
   height: 76px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,13 +741,9 @@ input:focus {
 }
 
 @media (max-width: 1023px) {
-  section, .intro-header {
-    margin-left: calc(max(calc(50% - 393px), 24px));
-    margin-right: calc(max(calc(50% - 393px), 24px));
-  }
-  footer {
-    padding-left: calc(max(calc(50% - 393px), 24px));
-    padding-right: calc(max(calc(50% - 393px), 24px));
+  .centered {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
   }
   main {
     margin-bottom: 48px;
@@ -795,13 +791,11 @@ input:focus {
 }
 
 @media (max-width: 767px) {
-  section, .intro-header {
-    margin-left: calc(max(calc(50% - 188px), 16px));
-    margin-right: calc(max(calc(50% - 188px), 16px));
+  .centered {
+    padding-left: calc(max(calc(50% - 178px), 12px));
+    padding-right: calc(max(calc(50% - 178px), 12px));
   }
   footer {
-    padding-left: calc(max(calc(50% - 393px), 24px));
-    padding-right: calc(max(calc(50% - 393px), 24px));
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -919,7 +913,7 @@ input:focus {
     margin-bottom: 32px;
   }
   .product-card {
-    width: 344px;
+    width: 100%;
   }
   .product-image {
     height: 228px;

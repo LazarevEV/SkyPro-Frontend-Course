@@ -1,17 +1,10 @@
 @media (max-width: 767px) {
-    @mixin centered() {
-        margin-left: calc(max(calc(50% - 188px), 16px));
-        margin-right: calc(max(calc(50% - 188px), 16px));
-    }
-
-    section, .intro-header {
-        @include centered();
+    .centered {
+        padding-left: calc(max(calc(50% - 178px), 12px));
+        padding-right: calc(max(calc(50% - 178px), 12px));
     }
 
     footer {
-        padding-left: calc(max(calc(50% - 393px), 24px));
-        padding-right: calc(max(calc(50% - 393px), 24px));
-
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
@@ -129,7 +122,7 @@
     }
     
     .product-card {
-        width: 344px;
+        width: 100%;
     }
     
     .product-image {
