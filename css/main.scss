@@ -179,12 +179,12 @@ input:focus{
     /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 56px;
+    margin-bottom: 20px;
 }
 
 .product-card {
     width: 379px;
-    // padding-bottom: 56px;
+    margin-bottom: 36px;
 }
 
 .product-image {
@@ -235,6 +235,8 @@ input:focus{
 
 .footer-logo {
     filter: brightness(0%);
+    width: 198px;
+    margin-right: 80px;
 }
 
 .footer-link {

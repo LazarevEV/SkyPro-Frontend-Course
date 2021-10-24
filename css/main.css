@@ -223,11 +223,12 @@ input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 56px;
+  margin-bottom: 20px;
 }
 
 .product-card {
   width: 379px;
+  margin-bottom: 36px;
 }
 
 .product-image {
@@ -287,6 +288,8 @@ input:focus {
 .footer-logo {
   -webkit-filter: brightness(0%);
           filter: brightness(0%);
+  width: 198px;
+  margin-right: 80px;
 }
 
 .footer-link {
