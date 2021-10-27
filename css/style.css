@@ -230,12 +230,40 @@ input:focus {
 .product-card {
   width: 379px;
   margin-bottom: 36px;
+  position: relative;
 }
 
 .product-image {
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 10px;
+}
+
+.product-card-control {
+  padding-top: 12px;
+  padding-right: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  gap: 12px;
+  display: none;
+}
+
+.product-image:hover ~ .product-card-control, .product-card-control:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-card-control-button {
+  background: none;
+  border: none;
+}
+
+.product-card-control-button:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(178deg) brightness(107%) contrast(113%);
+          filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(178deg) brightness(107%) contrast(113%);
+  cursor: pointer;
 }
 
 .product-name {
@@ -308,6 +336,9 @@ input:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -331,6 +362,12 @@ input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 16px;
+}
+
+.footer-contacts-social-icon:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(178deg) brightness(107%) contrast(113%);
+          filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(178deg) brightness(107%) contrast(113%);
 }
 
 .footer-subscription {
@@ -596,7 +633,7 @@ input:focus {
   line-height: 20px;
 }
 
-.product-card-control {
+.product-card-item-control {
   margin-top: auto;
 }
 
@@ -1060,5 +1097,6 @@ input:focus {
   background-size: 200% 200%;
   background-position: 0px 0px;
   color: #FFF;
+  cursor: pointer;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

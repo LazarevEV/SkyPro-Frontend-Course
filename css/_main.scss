@@ -185,11 +185,36 @@ input:focus{
 .product-card {
     width: 379px;
     margin-bottom: 36px;
+    position: relative;
 }
 
 .product-image {
     object-fit: cover;
     padding-bottom: 10px;
+}
+
+.product-card-control {
+    padding-top: 12px;
+    padding-right: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 12px;
+    display: none;
+}
+
+.product-image:hover ~ .product-card-control, .product-card-control:hover {
+    display: flex;
+}
+
+.product-card-control-button {
+    background: none;
+    border: none;
+}
+
+.product-card-control-button:hover {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(178deg) brightness(107%) contrast(113%);
+    cursor: pointer;
 }
 
 .product-name {
@@ -249,6 +274,7 @@ input:focus{
 .footer-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -265,6 +291,11 @@ input:focus{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 16px;
+}
+
+.footer-contacts-social-icon:hover {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(178deg) brightness(107%) contrast(113%);
 }
 
 .footer-subscription {
@@ -335,31 +366,3 @@ input:focus{
 .footer-link, .footer-contacts-social, .subscription-email-input, .subscribe-button {
     margin-bottom: 12px;
 }
-
-@import 'catalog';
-@import 'cart';
-@import 'tablet';
-@import 'mobile';
-
-.link {
-    text-decoration: none;
-}
-.link:hover {
-    text-decoration: underline;
-}
-
-.big-button {
-    transition: color .5s;
-    overflow: hidden;
-    background-image: linear-gradient(135deg, #31302B 50%, transparent 51%);
-    background-size: 100px 100px; 
-    background-position: -50px -50px;
-    background-repeat: no-repeat;
-    transition: all ease .5s;
-  }
-
-  .big-button:hover {
-    background-size: 200% 200%;
-    background-position: 0px 0px;
-    color: #FFF;
-  }
