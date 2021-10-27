@@ -414,7 +414,7 @@ input:focus {
 }
 
 .subscription-email-input::-webkit-input-placeholder {
-  font-family: Roboto;
+  font-family: Roboto sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -423,7 +423,7 @@ input:focus {
 }
 
 .subscription-email-input:-ms-input-placeholder {
-  font-family: Roboto;
+  font-family: Roboto sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -432,7 +432,7 @@ input:focus {
 }
 
 .subscription-email-input::-ms-input-placeholder {
-  font-family: Roboto;
+  font-family: Roboto sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -441,7 +441,7 @@ input:focus {
 }
 
 .subscription-email-input::placeholder {
-  font-family: Roboto;
+  font-family: Roboto sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
