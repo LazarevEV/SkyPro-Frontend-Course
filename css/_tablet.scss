@@ -16,8 +16,16 @@
         height: 265px;
     }
 
+    .footer-logo-link {
+        display: none;
+    }
+
     .footer-logo {
         display: none;
+    }
+
+    .footer-section:first {
+        padding-left: 0;
     }
 
     // Cart Page
