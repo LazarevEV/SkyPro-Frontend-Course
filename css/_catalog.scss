@@ -30,17 +30,17 @@
     flex-grow: 0;
 }
 
-.catalog-breadcrumb-nav a + a::before {
-    content: "\00a0/\00a0\00a0";
+// .catalog-breadcrumb-nav a + a::before {
+//     content: "\00a0/\00a0\00a0";
 
-    font-size: 16px;
-    line-height: 32px;
+//     font-size: 16px;
+//     line-height: 32px;
 
-    color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
+//     color: #000000;
+//     flex: none;
+//     order: 0;
+//     flex-grow: 0;
+// }
 
 .catalog-sort-dropdown {
     height: 41px;
