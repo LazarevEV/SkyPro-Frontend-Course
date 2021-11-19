@@ -1,7 +1,7 @@
 'use strict';
 
-let product_name = 'PRODUCT_NAME_PLACHOLDER'
-let product_price = '99999'
-let str = `${product_name}, ${product_price} RUR`
+function getRandomIntBetween(min, max) { // min and max included
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
 
-alert(str)
+console.log(getRandomIntBetween(2, 10))
